@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'ChestWorkout', loadChildren: './chest-workout/chest-workout.module#ChestWorkoutPageModule' },
+  { path: 'AbsWorkout', loadChildren: './abs-workout/abs-workout.module#AbsWorkoutPageModule' },
+  { path: 'LegsWorkout', loadChildren: './legs-workout/legs-workout.module#LegsWorkoutPageModule' },
+
 ];
 
 @NgModule({

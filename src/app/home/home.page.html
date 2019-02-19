@@ -1,16 +1,29 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button (click)="vibrate()"></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Home
+      Home Workout Trainer
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the
-    <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+<ion-content class="card-background-page" padding>
+
+  <ion-card (click)="showChestWorkout()">
+    <img src="../assets/chest.png"/>
+
+  </ion-card>
+
+  <ion-card (click)="showAbsWorkout()">
+    <img src="../assets/abs.png"/>
+
+  </ion-card>
+
+  <ion-card (click)="showLegsWorkout()">
+    <img src="../assets/legs.png"/>
+
+  </ion-card>
+
 </ion-content>
